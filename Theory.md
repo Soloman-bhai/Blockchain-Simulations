@@ -1,3 +1,28 @@
+# 📘 Blockchain Theoretical Overview
+
+This document provides a brief theoretical foundation for blockchain technology. It covers basic definitions, real-world applications, block structure, data integrity verification using Merkle roots, and core consensus mechanisms like PoW, PoS, and DPoS.
+
+---
+
+## 🧱 Blockchain Basics
+
+### 📖 What is a Blockchain?
+
+A **blockchain** is a distributed and immutable digital ledger that records data in a secure and verifiable manner. Each block contains a list of transactions and is linked to the previous block using cryptographic hashes. This ensures that once data is added, it cannot be tampered with without altering all subsequent blocks—making the chain secure by design. Blockchain operates across a decentralized peer-to-peer network, removing the need for a central authority. This structure is especially valuable for transparency, auditability, and resistance to fraud in various applications.
+
+### 🌍 Real-Life Use Cases
+
+1. **Supply Chain Management**: Blockchain can track goods in real-time from source to consumer, ensuring transparency, reducing fraud, and enabling recall of defective products.
+2. **Digital Identity Verification**: Individuals can maintain control over their identity data and share only necessary information securely with service providers.
+
+---
+
+## 🔗 Block Anatomy
+
+### 🧩 Structure of a Block
+
+Below is a diagram placeholder illustrating the key components of a blockchain block:
+
 
 > 🖼️ *Replace this with an actual image if used in GitHub:*  
 > `![Block Diagram](images/block-diagram.png)`
