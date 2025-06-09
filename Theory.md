@@ -24,7 +24,7 @@ A **blockchain** is a distributed and immutable digital ledger that records data
 
 ### 🧩 Structure of a Block
 
-Below is a diagram placeholder illustrating the key components of a blockchain block:
+Below is a diagram illustrating the key components of a blockchain block:
 
 
 ![Block Diagram](images/Block-Diagram.png)
