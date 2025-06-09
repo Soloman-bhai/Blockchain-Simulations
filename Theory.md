@@ -10,6 +10,9 @@ This document provides a brief theoretical foundation for blockchain technology.
 
 A **blockchain** is a distributed and immutable digital ledger that records data in a secure and verifiable manner. Each block contains a list of transactions and is linked to the previous block using cryptographic hashes. This ensures that once data is added, it cannot be tampered with without altering all subsequent blocks—making the chain secure by design. Blockchain operates across a decentralized peer-to-peer network, removing the need for a central authority. This structure is especially valuable for transparency, auditability, and resistance to fraud in various applications.
 
+![Working of Blockchain](images/blockchain-working.webp)``
+
+
 ### 🌍 Real-Life Use Cases
 
 1. **Supply Chain Management**: Blockchain can track goods in real-time from source to consumer, ensuring transparency, reducing fraud, and enabling recall of defective products.
