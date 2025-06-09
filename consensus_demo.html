@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consensus Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+
+<div class="page-info">
+  <h2>⚖️ Blockchain Consensus Mechanisms</h2>
+  <p>
+    This interactive demo compares three consensus mechanisms: 
+    <strong>Proof-of-Work (PoW)</strong>, <strong>Proof-of-Stake (PoS)</strong>, and <strong>Delegated Proof-of-Stake (DPoS)</strong>.
+    Explore how validators are selected differently in each model using power, stake, or votes,
+    and understand their strengths and trade-offs.
+  </p>
+</div>
+
+
+<div class="consensus-wrapper">
+  <div class="consensus-block pow" id="pow-block">
+    <h3>Proof of Work (PoW)</h3>
+    <div class="consensus-data" id="pow-data"></div>
+    <button class="btn-random" onclick="randomizePoW()">🔄 Randomize</button>
+    <button class="btn-simulate" onclick="simulatePoW()">⚡ Simulate</button>
+    <div class="consensus-result" id="pow-result"></div>
+  </div>
+
+  <div class="consensus-block pos" id="pos-block">
+    <h3>Proof of Stake (PoS)</h3>
+    <div class="consensus-data" id="pos-data"></div>
+    <button class="btn-random" onclick="randomizePoS()">🔄 Randomize</button>
+    <button class="btn-simulate" onclick="simulatePoS()">⚡ Simulate</button>
+    <div class="consensus-result" id="pos-result"></div>
+  </div>
+
+  <div class="consensus-block dpos" id="dpos-block">
+    <h3>Delegated Proof of Stake (DPoS)</h3>
+    <div class="consensus-data" id="dpos-data"></div>
+    <button class="btn-random" onclick="randomizeDPoS()">🔄 Randomize</button>
+    <button class="btn-simulate" onclick="simulateDPoS()">⚡ Simulate</button>
+    <div class="consensus-result" id="dpos-result"></div>
+  </div>
+</div>
+<script src="consensus_demo.js"></script>
+
+
+<div class="nav-buttons-container">
+  <button class="nav-button prev-btn">⬅️ Previous</button>
+  <button class="nav-button next-btn">Next ➡️</button>
+</div>
+<script>
+  document.querySelector('.next-btn').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+    document.querySelector('.prev-btn').addEventListener('click', function() {
+        window.location.href = 'mining_simulation.html';
+    });
+</script>
+
+</body>
+</html>

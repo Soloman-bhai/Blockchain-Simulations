@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blockchain Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+
+<div class="page-info">
+  <h2>🔍 Blockchain Tampering Detection</h2>
+  <p>
+    This simulation shows how each block in a blockchain is linked using cryptographic hashes.
+    When you tamper with a block's data, the hash changes and breaks the chain unless the block is re-mined.
+    Learn how immutability and hash linking maintain blockchain integrity.
+  </p>
+</div>
+
+  
+<div id="info-bar" class="valid">✅ Blockchain is valid</div>
+  <div id="controls">
+    <label for="difficulty">Difficulty:</label>
+    <input type="number" id="difficulty" min="1" max="6" value="4" />
+    <button onclick="resetChain()">🔁 Reset Chain</button>
+  </div>
+  <div id="blockchain-container" class="blockchain"></div>
+  <script src="blockchain_simulation.js"></script> 
+
+<div class="nav-buttons-container">
+  <button class="nav-button prev-btn">⬅️ Previous</button>
+  <button class="nav-button next-btn">Next ➡️</button>
+</div>
+<script>
+  document.querySelector('.next-btn').addEventListener('click', function() {
+    window.location.href = 'mining_simulation.html';
+  });
+</script>
+
+</body>
+</html>
